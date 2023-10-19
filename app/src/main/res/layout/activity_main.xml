@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="320dp"
+        android:layout_height="491dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/corpo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="246dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:background="#E4DFDF"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSoma"
+        style="@style/operacoes"
+        android:drawableTop="@drawable/soma"
+        app:layout_constraintBottom_toTopOf="@+id/btnMultiplicacao"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtracao"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDivisao"
+        android:layout_width="96dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/retangulos"
+        android:gravity="center"
+        android:text="÷"
+        android:textColor="#000000"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMultiplicacao"
+        style="@style/operacoes"
+        android:layout_marginBottom="92dp"
+        android:drawableTop="@drawable/baseline_close_24"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivisao"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubtracao"
+        style="@style/operacoes"
+        android:layout_marginEnd="36dp"
+        android:drawableTop="@drawable/baseline_remove_24"
+        app:layout_constraintBottom_toTopOf="@+id/btnDivisao"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.504" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="operacoes">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/retangulos</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+
+    <style name="input">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColorHint">#000000</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>
